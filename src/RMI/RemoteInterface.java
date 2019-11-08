@@ -3,8 +3,8 @@ package RMI;
 import java.rmi.Remote;
 
 public interface RemoteInterface extends Remote{
-    public int suma(int x, int y) throws Exception;
-    public int resta(int x, int y) throws Exception;
-    public int multiplica(int x, int y) throws Exception;
-    public int division(int x, int y) throws Exception;
+    public double atan(double x, double y) throws Exception;
+    public double pow(double x, double y) throws Exception;
+    public double min(double x, double y) throws Exception;
+    public double max(double x, double y) throws Exception;
 }

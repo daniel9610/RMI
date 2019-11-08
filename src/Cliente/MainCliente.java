@@ -21,14 +21,14 @@ public class MainCliente {
         try {
             String valora = JOptionPane.showInputDialog("Ingrese el valor del numero Uno");
             String valorb = JOptionPane.showInputDialog("Ingrese el valor del numero Dos");
-            int a = Integer.parseInt(valora);
-            int b = Integer.parseInt(valorb);
+            double a = Double.parseDouble(valora);
+            double b = Double.parseDouble(valorb);
             Registry miRegistro = LocateRegistry.getRegistry("127.0.0.1",1234);
             RemoteInterface s = (RemoteInterface) miRegistro.lookup("Matematicas");
-            JOptionPane.showMessageDialog(null,"Resultado suma : "+s.suma(a,b));
-            JOptionPane.showMessageDialog(null,"Resultado resta : "+s.resta(a,b));
-            JOptionPane.showMessageDialog(null,"Resultado multiplicacion : "+s.multiplica(a,b));
-            JOptionPane.showMessageDialog(null,"Resultado division : "+s.division(a,b));            
+            JOptionPane.showMessageDialog(null,"Resultado atan : "+s.atan(a,b));
+            JOptionPane.showMessageDialog(null,"Resultado potencia : "+s.pow(a,b));
+            JOptionPane.showMessageDialog(null,"Resultado minimo : "+s.min(a,b));
+            JOptionPane.showMessageDialog(null,"Resultado maximo : "+s.max(a,b));            
         } catch (Exception e) {
             System.out.println(e.getMessage());
             e.printStackTrace();

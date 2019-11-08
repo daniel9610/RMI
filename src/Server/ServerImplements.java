@@ -18,23 +18,23 @@ public class ServerImplements extends UnicastRemoteObject implements RemoteInter
     }
 
     @Override
-    public int suma(int x, int y) throws Exception {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double atan(double x, double y) throws Exception {
+        return Math.atan2(x, y);
     }
 
     @Override
-    public int resta(int x, int y) throws Exception {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double pow(double x, double y) throws Exception {
+        return Math.pow(x,y);
     }
 
     @Override
-    public int multiplica(int x, int y) throws Exception {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double min(double x, double y) throws Exception {
+        return Math.min(x,y);
     }
 
     @Override
-    public int division(int x, int y) throws Exception {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double max(double x, double y) throws Exception {
+        return Math.max(x,y);
     }
     
     public int potencia(int x, int y) throws Exception{
